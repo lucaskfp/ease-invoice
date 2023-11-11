@@ -1,6 +1,11 @@
 {
     "cSpell.words": [
         "bunx",
-        "Chakra"
+        "Chakra",
+        "lucide",
+        "preact"
+    ],
+    "exportall.config.folderListener": [
+        "/src/components"
     ]
 }
