@@ -3,6 +3,7 @@
         "bunx",
         "Chakra",
         "lucide",
+        "nextui",
         "preact"
     ],
     "exportall.config.folderListener": [
