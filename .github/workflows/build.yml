@@ -1,4 +1,4 @@
-name: build-test-deploy
+name: Build
 on:
   pull_request:
     branches: ["main"]
@@ -6,9 +6,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: use bun
+      - name: checkout repo
+        uses: actions/checkout@v4
+
+      - name: Use bun
         uses: oven-sh/setup-bun@v1
         with:
           bun-version: latest
-      - run: bun i
-      - run: bun run build
+
+      - name: Install dependecies
+        run: bun i
+
+      - name: Build app
+        run: bun run build
