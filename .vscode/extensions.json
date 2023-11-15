@@ -11,6 +11,7 @@
         "esbenp.prettier-vscode",
         "amatiasq.sort-imports",
         "meganrogge.template-string-converter",
-        "eliostruyf.vscode-typescript-exportallmodules"
+        "eliostruyf.vscode-typescript-exportallmodules",
+        "bradlc.vscode-tailwindcss"
     ]
 }
