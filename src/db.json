@@ -1,0 +1,74 @@
+[
+  {
+    "id": "34d733c2-9216-448a-a6e9-4290882f6988",
+    "name": "Water",
+    "due_date": "2023-12-07",
+    "paid": false,
+    "amount": 123456,
+    "category": "Utilities",
+    "payment_method": "Bank transfer",
+    "invoice_number": "INV-345678",
+    "comments": "Invoice for water usage for the month of November.",
+    "payment_date": null
+  },
+  {
+    "id": "e433e12d-019d-4b40-8f09-411250a89878",
+    "name": "Electricity",
+    "due_date": "2023-12-21",
+    "paid": true,
+    "amount": 234567,
+    "category": "Utilities",
+    "payment_method": "Credit card",
+    "invoice_number": "INV-901234",
+    "comments": "Invoice for electricity consumption for the month of November.",
+    "payment_date": "2023-12-21"
+  },
+  {
+    "id": "21345678-9012-3456-7890-123456789012",
+    "name": "Internet",
+    "due_date": "2023-12-31",
+    "paid": false,
+    "amount": 345678,
+    "category": "Communication",
+    "payment_method": "Direct debit",
+    "invoice_number": "INV-567890",
+    "comments": "Invoice for internet service for the month of December.",
+    "payment_date": null
+  },
+  {
+    "id": "67890123-4567-8901-2345-678901234567",
+    "name": "Phone",
+    "due_date": "2024-01-07",
+    "paid": true,
+    "amount": 456789,
+    "category": "Communication",
+    "payment_method": "Online payment",
+    "invoice_number": "INV-123456",
+    "comments": "Invoice for telephone service for the month of December.",
+    "payment_date": "2024-01-07"
+  },
+  {
+    "id": "90123456-7890-1234-5678-901234567890",
+    "name": "Gas",
+    "due_date": "2024-01-21",
+    "paid": false,
+    "amount": 567890,
+    "category": "Utilities",
+    "payment_method": "Check",
+    "invoice_number": "INV-789012",
+    "comments": "Invoice for gas consumption for the month of December.",
+    "payment_date": null
+  },
+  {
+    "id": "01234567-8901-2345-6789-012345678901",
+    "name": "Cable TV",
+    "due_date": "2024-01-31",
+    "paid": true,
+    "amount": 678901,
+    "category": "Entertainment",
+    "payment_method": "Automatic payment",
+    "invoice_number": "INV-345678",
+    "comments": "Invoice for cable television service for the month of December.",
+    "payment_date": "2024-01-31"
+  }
+]
