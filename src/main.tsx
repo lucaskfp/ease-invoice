@@ -1,4 +1,5 @@
 import "./tailwind.css";
+import "./index.css";
 
 import App from "./App.tsx";
 import { NextUIProvider } from "@nextui-org/react";
