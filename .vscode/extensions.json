@@ -1,17 +1,18 @@
 {
-    "recommendations": [
-        "formulahendry.auto-rename-tag",
-        "ms-edgedevtools.vscode-edge-devtools",
-        "oven.bun-vscode",
-        "neotan.vscode-auto-restart-typescript-eslint-servers",
-        "streetsidesoftware.code-spell-checker",
-        "dbaeumer.vscode-eslint",
-        "huuums.vscode-fast-folder-structure",
-        "codeandstuff.package-json-upgrade",
-        "esbenp.prettier-vscode",
-        "amatiasq.sort-imports",
-        "meganrogge.template-string-converter",
-        "eliostruyf.vscode-typescript-exportallmodules",
-        "bradlc.vscode-tailwindcss"
-    ]
+  "recommendations": [
+    "formulahendry.auto-rename-tag",
+    "ms-edgedevtools.vscode-edge-devtools",
+    "oven.bun-vscode",
+    "neotan.vscode-auto-restart-typescript-eslint-servers",
+    "streetsidesoftware.code-spell-checker",
+    "dbaeumer.vscode-eslint",
+    "huuums.vscode-fast-folder-structure",
+    "codeandstuff.package-json-upgrade",
+    "esbenp.prettier-vscode",
+    "amatiasq.sort-imports",
+    "meganrogge.template-string-converter",
+    "eliostruyf.vscode-typescript-exportallmodules",
+    "bradlc.vscode-tailwindcss",
+    "antfu.file-nesting"
+  ]
 }

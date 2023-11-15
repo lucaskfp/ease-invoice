@@ -4,7 +4,8 @@
         "Chakra",
         "lucide",
         "nextui",
-        "preact"
+        "preact",
+        "tailwindcss"
     ],
     "exportall.config.folderListener": [
         "/src/components",
