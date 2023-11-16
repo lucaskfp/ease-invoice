@@ -1,31 +1,13 @@
-name: Build
+name: Deploy Prod
 
 on:
-  push:
-    branches: ["main"]
+  workflow_run:
+    workflows: ["Main Flow"]
+    types: completed
   workflow_dispatch:
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-
-      - name: Use bun
-        uses: oven-sh/setup-bun@v1
-        with:
-          bun-version: latest
-
-      - name: Install dependecies
-        run: bun i
-
-      - name: Build app
-        run: bun run build
-
   deploy:
-    needs: build
-
     permissions:
       contents: read
       pages: write
