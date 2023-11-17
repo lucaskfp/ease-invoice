@@ -1,10 +1,10 @@
 name: Deploy Prod
 
 on:
+  workflow_dispatch:
   workflow_run:
     workflows: ["Main Flow"]
     types: completed
-  workflow_dispatch:
 
 jobs:
   deploy:
