@@ -22,8 +22,14 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     runs-on: ubuntu-latest
+    env:
+      VITE_SUPABASE_KEY: ${{secrets.VITE_SUPABASE_KEY}}
 
     steps:
+      - name: Check secrets
+        if: ${{ env.VITE_SUPABASE_KEY == '' }}
+        run: echo 'Couldn't find the secret VITE_SUPABASE_KEY'
+
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
