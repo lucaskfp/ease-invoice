@@ -5,10 +5,12 @@
         "lucide",
         "nextui",
         "preact",
+        "supabase",
         "tailwindcss"
     ],
     "exportall.config.folderListener": [
         "/src/components",
-        "/src/components/ui"
+        "/src/components/ui",
+        "/src/constants"
     ]
 }
