@@ -28,7 +28,9 @@ jobs:
     steps:
       - name: Check secrets
         if: ${{ env.VITE_SUPABASE_KEY == '' }}
-        run: echo 'Couldn't find the secret VITE_SUPABASE_KEY'
+        run: |
+          echo 'Couldn't find the secret VITE_SUPABASE_KEY'
+          exit 1
 
       - name: Checkout repo
         uses: actions/checkout@v4
