@@ -1,19 +1,20 @@
-import { User } from "@nextui-org/react";
+import { If } from "..";
+import { SignInUserModalButton } from "./SignInUserModalButton";
+import { SignedUser } from "./SignedUser";
+import { user } from "../../globalState";
 
-const USER_NAME = "Lucas Kennedy";
 export function Header() {
   return (
     <header className="py-4 flex justify-between items-center gap-8">
-      <h1 className="text-xl sm:text-2xl font-semibold">Nome Do APP</h1>
+      <h1 className="text-xl sm:text-2xl font-semibold">Ease Invoice</h1>
 
-      <User
-        name={USER_NAME}
-        description="Admin"
-        avatarProps={{
-          src: `https://source.boringavatars.com/beam/60/${USER_NAME}?colors=2729EF,444AFE,6370FF,8B9EFF,8393E3`,
-        }}
-        className="font-semibold"
-      />
+      <If condition={!user.value}>
+        <SignInUserModalButton />
+      </If>
+
+      <If condition={Boolean(user.value)}>
+        <SignedUser />
+      </If>
     </header>
   );
 }
