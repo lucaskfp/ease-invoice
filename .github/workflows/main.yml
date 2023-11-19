@@ -1,22 +1,14 @@
 name: Main Flow
 
 on:
-  pull_request:
+  push:
     branches: ["main"]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      VITE_SUPABASE_KEY: ${{secrets.VITE_SUPABASE_KEY}}
 
     steps:
-      - name: Check secrets
-        if: ${{ env.VITE_SUPABASE_KEY == '' }}
-        run: |
-          echo 'Couldn't find the secret VITE_SUPABASE_KEY'
-          exit 1
-
       - name: Checkout repo
         uses: actions/checkout@v4
 
