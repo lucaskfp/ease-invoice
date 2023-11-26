@@ -1,7 +1,6 @@
 {
   "recommendations": [
     "formulahendry.auto-rename-tag",
-    "ms-edgedevtools.vscode-edge-devtools",
     "oven.bun-vscode",
     "neotan.vscode-auto-restart-typescript-eslint-servers",
     "streetsidesoftware.code-spell-checker",
