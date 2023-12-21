@@ -2,12 +2,16 @@
     "cSpell.words": [
         "bunx",
         "Chakra",
+        "dayjs",
         "lucide",
         "mantine",
+        "Navlink",
         "nextui",
         "preact",
         "supabase",
-        "tailwindcss"
+        "tabler",
+        "tailwindcss",
+        "Wifi"
     ],
     "exportall.config.folderListener": [
         "/src/components",
