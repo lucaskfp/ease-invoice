@@ -1,14 +1,13 @@
 import "@mantine/core/styles.css";
 import "@mantine/dates/styles.css";
-import "./tailwind.css";
 import "dayjs/locale/pt-br";
+import "./tailwind.css";
 
-import { DatesProvider } from "@mantine/dates";
 import { MantineProvider } from "@mantine/core";
+import { DatesProvider } from "@mantine/dates";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { RouterProvider } from "react-router-dom";
-import { router } from "./router";
+import { App } from "./App.tsx";
 import { supabase } from "./constants";
 import { user } from "./globalState.ts";
 
@@ -22,7 +21,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <MantineProvider defaultColorScheme="auto">
       <DatesProvider settings={{ locale: "pt-br" }}>
-        <RouterProvider router={router} />
+        <App />
       </DatesProvider>
     </MantineProvider>
   </React.StrictMode>
